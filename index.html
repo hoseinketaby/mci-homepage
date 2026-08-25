@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>همراه اول | هیچکس تنها نیست</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    header{position:relative}
+    .nav{position:static;padding-right:138px}
+    .logo{position:absolute;right:0;top:0;display:flex;align-items:center;justify-content:center;padding:4px;background:#fff;margin:0!important;width:126px;height:96px;overflow:hidden!important}
+    .logo img{display:block!important;width:92px;height:92px;max-width:100%;object-fit:contain;object-position:center;transform:none}
+    .badges img{width:105px;height:105px;object-fit:contain}
+    .badges .footer-logo{width:135px;height:105px}
+    .hero .dots i{cursor:pointer}
+    .hero{overflow:hidden}
+    .hero-slides{position:relative;aspect-ratio:1890/674;background:#047bad}
+    .hero-slide{position:absolute;top:0;left:0;width:100%;height:calc(100% + clamp(20px,2.2vw,42px));object-fit:cover;object-position:top;opacity:0;transition:opacity .45s ease}
+    .hero-slide.active{opacity:1}
+    .quickcards a,.shop article,.storygrid article{cursor:pointer;transition:transform .2s,box-shadow .2s}
+    .quickcards a.selected,.shop article.selected,.storygrid article.selected{transform:translateY(-4px);box-shadow:0 12px 24px #003b5526}
+    @media(max-width:600px){.nav{padding-right:98px}.logo{width:92px;height:70px}.logo img{width:66px;height:66px}}
+  </style>
+</head>
+<body>
+  <div class="top"><div class="wrap topin"><span>تجربه‌ای متفاوت با همراه اول</span><div><a>مشتریان حقیقی</a><a>مشتریان سازمانی</a><a>هیچکس تنها نیست</a></div></div></div>
+  <header><div class="wrap nav">
+    <a class="logo"><img src="MyMCI-Logo (2).png" alt="my mci"></a>
+    <nav><a href="#internet">اینترنت</a><a href="#shop">تعرفه و طرح‌های تشویقی</a><a href="#services">سرویس‌ها و محصولات</a><a href="#support">صورت‌حساب و شارژ</a><a href="#news">مسابقات و برندگان</a><a href="#support">پشتیبانی</a></nav>
+    <div class="tools"><button class="search" type="button" aria-label="جستجو">⌕</button><a class="pin" href="#support" aria-label="مراکز خدمات">●</a><a class="my-mci-button" href="#services">همراه من</a></div>
+    <button class="hamb" aria-label="منو">☰</button>
+  </div></header>
+  <section class="search-panel" aria-hidden="true">
+    <div class="wrap search-panel-inner">
+      <label for="site-search">جستجو در سایت</label>
+      <div class="search-row"><input id="site-search" type="search" placeholder="مثلاً اینترنت، قبض یا پشتیبانی"><button type="button" id="search-submit">جستجو</button><button type="button" id="search-close" aria-label="بستن">×</button></div>
+      <p id="search-result" role="status"></p>
+    </div>
+  </section>
+  <main>
+    <section class="hero">
+      <div class="hero-slides" aria-live="polite">
+        <img class="hero-slide active" src="تصویر صفحه 2026-08-25 194100.png" alt="جشنواره تولد همراه اول">
+        <img class="hero-slide" src="تصویر صفحه 2026-08-25 194118.png" alt="اینترنت اشتراکی همراه اول">
+        <img class="hero-slide" src="1755329721809-6QAN.jpg" alt="بسته‌های بلندمدت اینترنت">
+      </div>
+      <div class="dots" aria-label="اسلایدهای اصلی">
+        <i class="on" role="button" tabindex="0" aria-label="اسلاید ۱"></i>
+        <i role="button" tabindex="0" aria-label="اسلاید ۲"></i>
+        <i role="button" tabindex="0" aria-label="اسلاید ۳"></i>
+      </div>
+    </section>
+    <section class="notice" id="news"><div class="wrap noticein"><div class="notice-art">◌</div><div><h3>همراه ۲.۴ میلیارد تومان در مسیر اربعین</h3><small>۲۵ مرداد ۱۴۰۵</small><a href="#stories">مشاهده ←</a></div></div></section>
+    <section class="quick" id="services"><div class="wrap quickin"><h2>تازه‌ها و پرکاربردها</h2><div class="quickcards"><a href="#internet"><b>خرید بسته‌های اینترنت</b><span>←</span></a><a href="#app"><b>همراه اول</b><span>←</span></a><a href="#internet"><b>اینترنت همراهی</b><span>←</span></a><a href="#support"><b>انتقال اعتبار</b><span>←</span></a></div><div class="dots small"><i class="on"></i><i></i></div></div></section>
+    <section class="shop" id="shop"><div class="wrap shopin"><div class="products"><article><a href="#simcard"><div class="pic p1">سیم‌کارت<br><strong>همراه اول</strong></div><b>خرید سیم‌کارت</b></a></article><article><a href="#internet"><div class="pic p2">۱۰۰GB</div><b>خرید بسته اینترنت</b></a></article><article><a href="#devices"><div class="pic p3">5G</div><b>خرید مودم</b></a></article></div><aside><strong>فروشگاه<br>آنلاین</strong><a class="store-button" href="#shop">رفتن به فروشگاه</a></aside></div></section>
+    <section class="content-sections" id="internet">
+      <div class="wrap">
+        <div class="section-heading"><span>خدمات دیجیتال</span><h2>همراه اول، برای هر سبک زندگی</h2><p>از اینترنت پرسرعت تا مدیریت سیم‌کارت، همه خدمات مورد نیازتان را یک‌جا و ساده در اختیار دارید.</p></div>
+        <div class="feature-grid">
+          <article id="simcard"><div class="feature-icon">SIM</div><h3>سیم‌کارت‌های متنوع</h3><p>سیم‌کارت دائمی، اعتباری و سازمانی را با چند کلیک سفارش دهید و وضعیت ارسال را آنلاین پیگیری کنید.</p><a href="#shop">مشاهده گزینه‌ها ←</a></article>
+          <article><div class="feature-icon">4G</div><h3>بسته‌های اینترنت همراه</h3><p>بسته‌های روزانه، ماهانه و بلندمدت با پیشنهادهای ویژه برای مصرف کم، متوسط و پرمصرف.</p><a href="#shop">خرید بسته اینترنت ←</a></article>
+          <article id="devices"><div class="feature-icon">5G</div><h3>تجربه اینترنت 5G</h3><p>با مودم‌ها و بسته‌های سازگار، سرعت بالاتر و تأخیر کمتر را در خانه و محل کار تجربه کنید.</p><a href="#shop">آشنایی با تجهیزات ←</a></article>
+          <article id="app"><div class="feature-icon">APP</div><h3>همراه من</h3><p>مانده اینترنت، قبض، شارژ، خرید بسته و مدیریت خدمات را از داخل اپلیکیشن همراه من انجام دهید.</p><a href="#support">راهنمای همراه من ←</a></article>
+        </div>
+      </div>
+    </section>
+    <section class="promo-band" id="support"><div class="wrap promo-inner"><div><span class="eyebrow">پشتیبانی همیشه همراه شماست</span><h2>پاسخ پرسش‌هایتان را سریع پیدا کنید</h2><p>راهنمای خدمات، کدهای دستوری، پرداخت قبض و نزدیک‌ترین مرکز خدمات را در یک صفحه ببینید.</p></div><div class="promo-actions"><a href="#faq">سؤالات متداول</a><a href="#contact">ارتباط با ما</a></div></div></section>
+    <section class="faq-section" id="faq"><div class="wrap"><div class="section-heading"><span>راهنمای سریع</span><h2>سؤالات متداول کاربران</h2></div><div class="faq-grid"><details><summary>چطور بسته اینترنت بخرم؟</summary><p>از بخش فروشگاه، بسته مورد نظر را انتخاب کنید و پس از ورود به همراه من، پرداخت را کامل کنید.</p></details><details><summary>چطور مانده اینترنت را ببینم؟</summary><p>در اپلیکیشن همراه من یا با شماره‌گیری کدهای دستوری، مانده بسته و تاریخ انقضا را بررسی کنید.</p></details><details><summary>نزدیک‌ترین مرکز خدمات کجاست؟</summary><p>با انتخاب گزینه مراکز خدمات در بالای صفحه، موقعیت و ساعت کاری مراکز اطراف خود را مشاهده کنید.</p></details><details><summary>چطور سیم‌کارت را فعال کنم؟</summary><p>پس از دریافت سیم‌کارت، مراحل فعال‌سازی درج‌شده در بسته را انجام دهید یا با پشتیبانی تماس بگیرید.</p></details></div></div></section>
+    <section class="stories"><div class="wrap storyin"><div class="storygrid"><article><div class="storyimg s1"></div><h3>هویت جدید در کاربرد</h3><p>رنگ‌ها و نشان جدید همراه اول همچون سفیری از دنیای فراگیر، بازتاب‌دهنده روح ارتباطات مدرن خواهد بود.</p><a>مشاهده ادامه مطلب ←</a></article><article><div class="storyimg s2"></div><h3>داستان ریبرندینگ</h3><p>جوهره جدید برند ما، قدرت بخشی به دنیای فراگیر برای ارتباطی نامحدود است.</p><a>مشاهده ادامه مطلب ←</a></article><article><div class="storyimg s3"></div><h3>رنگ، سایه و لوگوتایپ جدید</h3><p>آبی به عنوان نمادی از شفافیت، صداقت و تحول، احساس اعتماد و نوآوری را به ارمغان می‌آورد.</p><a>مشاهده ادامه مطلب ←</a></article><article><div class="storyimg s4"></div><h3>هیچکس تنها نیست</h3><p>همراه اول همیشه در کنار شماست؛ برای ساختن آینده‌ای که در آن هیچکس تنها نیست.</p><a>مشاهده ادامه مطلب ←</a></article></div></div></section>
+  </main>
+  <footer><div class="wrap foot"><div class="badges"><img src="195.png" alt="نشان ساماندهی"><img class="footer-logo" src="MyMCI-Logo (2).png" alt="my mci"></div><div><h4>اینترنت</h4><a>اینترنت 5G</a><a>اینترنت همراهی</a><a>بسته‌های اینترنت</a></div><div><h4>سرویس‌ها</h4><a>اپلیکیشن همراه من</a><a>پرداخت صورت‌حساب</a><a>رومینگ</a></div><div><h4>طرح‌ها و برندگان</h4><a>اسامی برندگان</a><a>انتقال شارژ</a><a>بسته‌های بلندمدت</a></div><div><h4>درباره ما</h4><a>پشتیبانی همراه اول</a><a>دفاتر و نمایندگی‌ها</a><a>فرصت‌های همکاری</a></div></div><div class="footbottom"><div class="wrap"><span>شرکت ارتباطات سیار ایران (همراه اول)</span><span>شماره پروانه رگولاتوری ۱۰۰/۱۰۰</span></div></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
